@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="349.0" stylesheets="@MenuStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyAppControllers.HealthMenuController">
+    <children>
+        <TitledPane collapsible="false" prefHeight="51.0" prefWidth="349.0" stylesheets="@MenuStyle.css" text="My Health Tracker" textFill="#2e626e">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="59.0" prefWidth="347.0" />
+            </content>
+            <font>
+                <Font name="Comic Sans MS" size="23.0" />
+            </font>
+        </TitledPane>
+        <Button fx:id="BmiButton" layoutX="21.0" layoutY="102.0" mnemonicParsing="false" onAction="#GoToBMI" prefHeight="25.0" prefWidth="296.0" stylesheets="@MenuStyle.css" text="Calculate your BMI" textFill="#2e626e">
+            <font>
+                <Font name="Comic Sans MS" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="CardiacButton" layoutX="21.0" layoutY="171.0" mnemonicParsing="false" onAction="#GoToCardiac" prefHeight="25.0" prefWidth="296.0" stylesheets="@MenuStyle.css" text="Basic cardiac checkup" textFill="#2e626e">
+            <font>
+                <Font name="Comic Sans MS" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="ExerButton" layoutX="27.0" layoutY="235.0" mnemonicParsing="false" onAction="#GoToExercise" prefHeight="38.0" prefWidth="296.0" stylesheets="@MenuStyle.css" text="Exercises for you" textFill="#2e626e">
+            <font>
+                <Font name="Comic Sans MS" size="17.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="75.0" fitWidth="78.0" layoutX="8.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bmi-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="78.0" layoutX="271.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cardiac2-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="85.0" layoutX="2.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exercise-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="infoButton" layoutX="17.0" layoutY="299.0" mnemonicParsing="false" onAction="#GoToHealthInfo" prefHeight="36.0" prefWidth="303.0" text="My Health Info" textFill="#2e626e">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="HealthSteps" layoutX="17.0" layoutY="361.0" mnemonicParsing="false" onAction="#GoToHealthSteps" prefHeight="36.0" prefWidth="303.0" text="Taken Healthcare Steps" textFill="#2e626e">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="HealthGoBack" layoutX="149.0" layoutY="416.0" mnemonicParsing="false" onAction="#GoBackToMenu" text="Back" />
+    </children>
+</AnchorPane>
