@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="343.0" stylesheets="@DecorateHealth.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyAppControllers.ExerciseController">
+    <children>
+        <TitledPane animated="false" prefHeight="35.0" prefWidth="343.0" text="Exercises for your well being" textFill="#b1759e">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+            <font>
+                <Font name="Comic Sans MS Bold" size="15.0" />
+            </font>
+        </TitledPane>
+        <Button fx:id="Aerobic" layoutX="102.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleAerobic" prefHeight="25.0" prefWidth="109.0" text="Aerobic">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+        <Button fx:id="StrBuild" layoutX="102.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleStrengthBuilding" text="Strength Building">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+        <Button fx:id="Endurance" layoutX="102.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleEndurance" prefHeight="25.0" prefWidth="109.0" text="Endurance">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+        <Button fx:id="flexibility" layoutX="102.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleFlexibility" prefHeight="25.0" prefWidth="109.0" text="Flexibility">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+        <Button fx:id="Cardio" layoutX="102.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleCardio" prefHeight="25.0" prefWidth="109.0" text="Cardio">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="84.0" fitWidth="100.0" layoutX="2.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exer1-removebg-preview-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="115.0" layoutX="255.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exer3-removebg-preview-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="115.0" layoutX="2.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exer2-removebg-preview-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="109.0" layoutX="250.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exer4-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="HealthGoBack" layoutX="104.0" layoutY="360.0" mnemonicParsing="false" onAction="#HealthTrackerGoBack" prefHeight="25.0" prefWidth="109.0" text="Back">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
